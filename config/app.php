@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://srpt.mada.gov.my'),
+    'url' => env('APP_URL', 'http://localhost/rekod'),
 
     /*
     |--------------------------------------------------------------------------
