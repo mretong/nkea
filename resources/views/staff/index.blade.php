@@ -22,7 +22,7 @@
 		    <tr>
 				<td><center>{{ $loop->iteration }}</td>
 				<td><center>{{ $staff->nama }}</td>
-				<td><center>{{ $staff->ptj->nama }}</td>
+				<td><center>{{ $staff->ptj_id }}</td>
 				
 				<td><center>					
 					<a href="{{ route('members.staff.show', ['id' => $staff->id]) }}"><button class="btn btn-info">Kemaskini</button></a>

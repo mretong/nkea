@@ -23,7 +23,7 @@
 		@forelse ($owners as $owner)
 		    <tr>
 				<td><center>{{ $loop->iteration }}</td>
-				<td><center>{{ $owner->blok->nama }} - {{ $owner->lot->no_lot  }} </td>
+				<td><center>{{ $owner->blok_id }} - {{ $owner->lot->no_lot  }} </td>
 				<td><center>{{ $owner->no_kp }}</td>
 				<td><center>{{ $owner->nama }}</td>
 				

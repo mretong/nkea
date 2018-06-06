@@ -22,7 +22,7 @@
 		@forelse ($kforms as $kform)
 		    <tr>
 				<td><center>{{ $loop->iteration }}</td>
-				<td><center>{{ $kform->blok->nama }}</td>
+				<td><center>{{ $kform->blok_id }}</td>
 				<td><center>{{ $kform->lot->no_lot }} - {{ $kform->lot->no_hakmilik  }} </td>
 				<td><center>{{ $kform->tarikh_k->format('d/m/Y') }}</td>
 				
