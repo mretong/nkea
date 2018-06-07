@@ -22,7 +22,7 @@
 		@forelse ($warrants as $warrant)
 		    <tr>
 				<td><center>{{ $loop->iteration }}</td>
-				<td><center>{{ $warrant->blok_id }}</td>
+				<td><center>{{ $warrant->blok->nama }}</td>
 				<td><center>{{ $warrant->no_warta }}</td>
 				<td><center>{{ $warrant->tarikh_warta->format('d/m/Y') }}</td>
 				

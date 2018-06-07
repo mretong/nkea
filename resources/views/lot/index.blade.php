@@ -22,7 +22,7 @@
 		@forelse ($lots as $lot)
 		    <tr>
 				<td><center>{{ $loop->iteration }}</td>
-				<td><center>{{ $lot->blok_id }}</td>
+				<td><center>{{ $lot->blok->nama }}</td>
 				<td><center>{{ $lot->no_lot }}</td>
 				<td><center>{{ $lot->no_hakmilik }}</td>
 				

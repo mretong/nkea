@@ -14,6 +14,6 @@ class Staff extends Model
 
     public function ptj()
     {
-    	return $this->belongsTo('App\Ptj','ptj_id','id');
+    	return $this->belongsTo('App\Ptj');
     }
 }

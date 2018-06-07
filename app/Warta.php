@@ -15,7 +15,7 @@ class Warta extends Model
 
     public function blok()
     {
-    	return $this->belongsTo('App\Blok','blok_id','id');
+    	return $this->belongsTo('App\Blok');
     }
 
     public function pakej()
