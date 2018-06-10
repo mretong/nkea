@@ -75,6 +75,9 @@
               <!-- <a class="dropdown-item" href="#">Laporan 1</a> -->
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('members.carian.index') }}">Carian</a>
+          </li>
         </ul>
         <div class="form-inline my-2 my-lg-0">
           <a class="dropdown-item" href="{{ route('logout') }}"

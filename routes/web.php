@@ -767,4 +767,15 @@ Route::group(['prefix' => 'members', 'as' => 'members.', 'middleware' => 'auth']
 		]);
 	});
 
+
+
+	//Carian
+	Route::group(['prefix' => 'carian'], function() {
+
+		Route::get('/', [
+			'as'	=>	'carian.index',
+			'uses'	=>	'CarianController@index'
+		]);
+	});
+
 }); // end of auth group
