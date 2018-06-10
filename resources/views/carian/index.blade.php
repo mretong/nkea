@@ -23,11 +23,11 @@
 		</thead>
 		<tr>
 			<td>No.Blok</td>
-			<td> {{ Form::select('negeri_id', ['L'=>'Large','M'=>'Medium','S'=>'Small'], null, ['class' => 'form-control col-sm-6', 'placeholder' => 'Pilih Blok']) }} </td>
+			<td> {{ Form::select('negeri_id', $blok, null, ['class' => 'form-control col-sm-6', 'placeholder' => 'Pilih Blok']) }} </td>
 		</tr>
 		<tr>
 			<td>No.Lot</td>
-			<td> {{ Form::select('negeri_id', ['L'=>'Large','M'=>'Medium','S'=>'Small'], null, ['class' => 'form-control col-sm-6', 'placeholder' => 'Pilih Lot']) }} </td>
+			<td> {{ Form::select('negeri_id', $lot, null, ['class' => 'form-control col-sm-6', 'placeholder' => 'Pilih Lot']) }} </td>
 		</tr>
 		<tr>
 			<td colspan="2" align="right">{{ Form::submit('Cari', ['class' => 'btn btn-primary']) }}</td>
