@@ -46,7 +46,7 @@
 		    </tr>
 		@endforelse
 
-		@if($kforms->count() > 10)
+		@if($kforms->count() >= 10 || $kforms->count() <= 10)
 			<tr>
 				<td colspan="5" align="center">{{ $kforms->render() }}</td>
 			</tr>

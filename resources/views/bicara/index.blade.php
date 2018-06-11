@@ -48,7 +48,7 @@
 		    </tr>
 		@endforelse
 
-		@if($hearings->count() > 10)
+		@if($hearings->count() >= 10 || $hearings->count() <= 10)
 			<tr>
 				<td colspan="6" align="center">{{ $hearings->render() }}</td>
 			</tr>

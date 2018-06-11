@@ -44,7 +44,7 @@
 		    </tr>
 		@endforelse
 
-		@if($banks->count() > 10)
+		@if($banks->count() >= 10 || $banks->count() <= 10 )
 			<tr>
 				<td colspan="4" align="center">{{ $banks->render() }}</td>
 			</tr>

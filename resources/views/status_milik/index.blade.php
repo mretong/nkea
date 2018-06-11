@@ -43,7 +43,7 @@
 		    </tr>
 		@endforelse
 
-		@if($owned->count() > 10)
+		@if($owned->count() >= 10 || $owned->count() <= 10 )
 			<tr>
 				<td colspan="4" align="center">{{ $owned->render() }}</td>
 			</tr>

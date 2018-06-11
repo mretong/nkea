@@ -47,7 +47,7 @@
 		    </tr>
 		@endforelse
 
-		@if($complaints->count() > 10)
+		@if($complaints->count() >= 10 || $complaints->count() <= 10)
 			<tr>
 				<td colspan="5" align="center">{{ $complaints->render() }}</td>
 			</tr>

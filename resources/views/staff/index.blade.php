@@ -43,7 +43,7 @@
 		    </tr>
 		@endforelse
 
-		@if($staffs->count() > 10)
+		@if($staffs->count() >= 10 || $staff->count() <= 10 )
 			<tr>
 				<td colspan="5" align="center">{{ $staffs->render() }}</td>
 			</tr>

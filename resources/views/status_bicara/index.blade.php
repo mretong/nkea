@@ -43,7 +43,7 @@
 		    </tr>
 		@endforelse
 
-		@if($comps->count() > 10)
+		@if($comps->count() >= 10 || $comps->count() <= 10 )
 			<tr>
 				<td colspan="4" align="center">{{ $comps->render() }}</td>
 			</tr>

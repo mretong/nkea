@@ -44,7 +44,7 @@
 		    </tr>
 		@endforelse
 
-		@if($kategori->count() > 10)
+		@if($kategori->count() >= 10 || $kategori->count() <= 10 )
 			<tr>
 				<td colspan="4" align="center">{{ $kategori->render() }}</td>
 			</tr>

@@ -44,7 +44,7 @@
 		    </tr>
 		@endforelse
 
-		@if($phases->count() > 10)
+		@if($phases->count() >= 10 || $phases->count() <= 10)
 			<tr>
 				<td colspan="4" align="center">{{ $phases->render() }}</td>
 			</tr>

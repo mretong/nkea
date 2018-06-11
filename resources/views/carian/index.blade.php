@@ -19,7 +19,7 @@
 
 	<table class="table table-bordered table-striped">
 		<thead>
-			<th colspan="2"><h4>Carian Data Mengikut Lot</h4></th>
+			<th colspan="2"><h4>Carian Data Berdasarkan Blok & Lot</h4></th>
 		</thead>
 		<tr>
 			<td>{!! Form::label('nama', 'Blok', ['class'=>'form control col-sm-6']) !!}</td>

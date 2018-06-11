@@ -45,7 +45,7 @@
 		    </tr>
 		@endforelse
 
-		@if($warrants->count() > 10)
+		@if($warrants->count() >= 10 || $warrants->count() <= 10)
 			<tr>
 				<td colspan="5" align="center">{{ $warrants->render() }}</td>
 			</tr>

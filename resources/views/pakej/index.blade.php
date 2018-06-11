@@ -44,7 +44,7 @@
 		    </tr>
 		@endforelse
 
-		@if($packages->count() > 10)
+		@if($packages->count() >= 10 || $packages->count() <= 10)
 			<tr>
 				<td colspan="4" align="center">{{ $packages->render() }}</td>
 			</tr>

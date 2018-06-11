@@ -47,7 +47,7 @@
 		    </tr>
 		@endforelse
 
-		@if($owners->count() > 10)
+		@if($owners->count() >= 10 || $owners->count() <= 10)
 			<tr>
 				<td colspan="5" align="center">{{ $owners->render() }}</td>
 			</tr>
